@@ -14,7 +14,12 @@ namespace P2
             int n1 = int.Parse(Console.ReadLine());
             int n2 = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = n1; i <= n2; ++i) {
+            for (int i = n1; i <= n2; ++i) 
+            {
+                if(i <= 1)
+                {
+                    continue;
+                }
                 int cnt = 1;
                 for (int j = i / 2; j >= 2; j--) {
                     if (i % j == 0) cnt += j;
